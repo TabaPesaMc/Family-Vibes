@@ -1,0 +1,307 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Appointment Form</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.jpg' %}" type="image/jpg" />
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css1/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css1/style.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css1/responsive.css' %}">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="{% static 'css1/colors/orange.css' %}" />
+
+    <!-- Modernizer -->
+    <script src="{% static 'js1/modernizer.js' %}"></script>
+    
+    <link rel="stylesheet" href="{% static 'assets/css/THANOS_website_series_part_div_preloader.css' %}">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+ <body style="background-image: url(static/images/background.png); height: auto; width: auto; border: 0px solid rgb(236, 236, 245);"  data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+    
+   <!-- =========================
+     PRE LOADER       
+============================== -->
+<div id="DivPreloader" class="div-preloader">
+	<div class="display-cell">
+		<div class="div-caption">
+			You are Welcome
+		</div>
+		<div class="cssload-thecube">
+			<div class="cssload-cube cssload-c1"></div>
+			<div class="cssload-cube cssload-c2"></div>
+			<div class="cssload-cube cssload-c4"></div>
+			<div class="cssload-cube cssload-c3"></div>
+		</div>
+		<div class="div-loading">
+			Family Vibes is Loading...
+		</div>
+	</div>
+</div>
+
+
+    <script src="{% static 'assets/js/THANOS_website_series_part_div_preloader.js' %}"></script>
+<br><br><br><br><br><br><br><br><br><br>
+	{% if Jina_la_Mteja %}
+	    <center>
+            <div class="p-3 mb-2 bg-gradient-success text-white"></div>
+			<h2 bg="success"><p><strong>Ahsante Ndugu {{Jina_la_Mteja}}</strong></p></h2>
+			<h3><p><strong style="color: rgb(0, 0, 0);">Tumepokea ujumbe wako, tutakutafuta kwa njia ya simu ndani ya muda mfupi ujao. </strong></p></h3>
+		</center>
+	  <br/><br/><br/>
+
+	{% else %}
+
+    <div id="pricing" class="pricing-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+						Bei Zetu Family Vibes 	
+					</h2>
+                    <p>Tazama Kwa makini bei zetu kwa kila Package halafu ufanye Appointment Kwa kujaza Taarifa zako hapo chini Ukishamaliza utakuja ofisini Kwetu Kuja Kuchukua Form ya Huduma Kwa Shilingi 2000/=</p>
+                </div>
+                <div class="panel-pricing-in">
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="">
+                                    <img src="{% static 'images/' %}" alt="" />
+                                </div>
+                                <h3>Huduma</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong><span>Dakika hadi Lisaa</span></strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Dk 30 Tsh 15,000/=</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Dk 50 Tsh 25,000/=</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Saa 1 Tsh 35,000/=</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Saa 1-2 Tsh 65,000/=</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Saa 2-4 Tsh 125,000/=</li>
+                            
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#e">Family Vibes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="{% static 'images/food.png' %}" alt="" />
+                                </div>
+                                <h3>Huduma</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p>Tsh 250,000/= <strong><span>Mwezi</span></strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> watapata huduma ya kipaumbele katika appointment.</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Atapata huduma ya masaa 10 Bure.</li>
+                             
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#e">Family Vibes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="{% static 'images/coffee.png' %}" alt="" />
+                                </div>
+                                <h3>Huduma</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p>Tsh 150,000/=<strong><span>Mwaka</span></strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Watashiriki kwenye Family vibes festival bila malipo.</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Couples watashiriki katika Valentine na Family Vibes bila malipo.</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Watapata kipaumbele katika huduma.</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Atapata punguzo la 15%la garama za huduma.</li>
+                                
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#e">Family Vibes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!-- end pricing-main -->
+	        <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center">
+					    Weka Appointment Yako			
+					</h2>
+                        </div>
+                        <h4 class="form-title">BOOKING FORM</h4>
+                        <p>Tafadhari Jaza Nafasi Zote* . Ahsante</p>
+
+                        <form method="post" action="{% url 'booking' %}">
+                            {% csrf_token %}
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="Jina_la_Mteja" id="form_name" placeholder="Jina Lako" required="required" data-error="Firstname is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="Mahali_anapoishi" id="form_name" placeholder="Sehemu Unapo Ishi" required="required" data-error="Location is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="Jinsia" type="text" id="no_of_persons" class="selectpicker">
+                                        <option selected disabled>Jinsia Yako</option>
+                                        <option>Mme</option>
+                                        <option>Mke</option>
+
+                                    </select>
+                                </div>
+
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="phone" name="Namba_ya_simu" id="phone" placeholder="Namba za Simu">
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="email" name="Email" id="email" placeholder="E-Mail" required="required" data-error="E-mail id is required.">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="Tarehe" id="date-picker" placeholder="Tarehe Unayo omba" required="required" data-error="Date is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="Muda_wa_kukutana" id="time-picker" placeholder="Muda unao Omba" required="required" data-error="Time is required." />
+                                </div>
+                            </div>
+
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="Huduma_ninayoitaji" id="preferred_food" class="selectpicker">
+                                        <option selected disabled>Huduma Unayo Hitaji </option>
+                                        <option>Wachumba wa Muda Mrefu Kufunga Ndoa</option>
+                                        <option>Wasio na Wachumba Kupata Wachumba Sahihi</option>
+                                        <option>Wenye ndoa Zenye Migogoro Kupata Suluhu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="Muda_wa_kupata_huduma" class="selectpicker">
+                                        <option selected disabled>Muda wa Huduma </option>
+                                        <option>Dakika 30</option>
+                                        <option>Dakika 50</option>
+                                        <option>Saa 1</option>
+                                        <option>Masaa 1-2</option>
+                                        <option>Masaa 2-4</option>
+                                        <option>Mwezi</option>
+                                        <option>Kuomba Uwanachama</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="Status" id="occasion" class="selectpicker">
+                                        <option selected disabled>Status Yako</option>
+                                        <option>Nimeoa</option>
+                                        <option>Nimeolewa</option>
+                                        <option>Nipo Kwenye Mahusiano</option>
+                                        <option>Nipo Single</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="reserve-book-btn text-center">
+                                    <button class="hvr-underline-from-center" name="submit" type="submit" value="SEND" id="submit">Tuma Ombi Lako</button>
+                                </div>
+                            </div>
+                        </form>
+{% endif %}
+
+                        <!-- end form -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end reservations-box -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <div class="panel-footer">
+        <a class="btn btn-lg btn-block hvr-underline-from-center" href="/">Rudi Nyumbani</a>
+    </div>
+    <!-- end reservations-main -->
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js1/all.js' %}"></script>
+    <script src="{% static 'js1/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js1/custom.js' %}"></script>
+</body>
+</html>
